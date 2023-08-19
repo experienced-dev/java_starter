@@ -1,7 +1,7 @@
 name: github-actions
 on: [push]
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: java-starter-template:${{ github.sha }}
+          tags: ghcr.io/experienced-dev/java-starter-template/builds:${{ github.sha }}
