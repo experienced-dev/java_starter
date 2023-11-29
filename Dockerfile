@@ -6,7 +6,7 @@ RUN ./gradlew dependencies --no-daemon
 COPY --chown=gradle:gradle . ./
 RUN ./gradlew build --no-daemon
 
-FROM openjdk:17.0.2-jdk-slim
+FROM openjdk:21-jdk-slim
 COPY --from=build /home/gradle/src/build/libs/*.jar /app.jar
 ENV JAVA_OPTS="-Xmx1024m"
 ENTRYPOINT ["java", "-jar", "/app.jar"]
