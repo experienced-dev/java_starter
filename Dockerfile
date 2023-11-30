@@ -1,4 +1,4 @@
-FROM gradle:8.4.0-jdk17 AS build
+FROM gradle:8.5.0-jdk17 AS build
 WORKDIR /home/gradle/src
 COPY --chown=gradle:gradle gradle gradle
 COPY --chown=gradle:gradle gradlew build.gradle.kts settings.gradle.kts gradlew.bat ./
