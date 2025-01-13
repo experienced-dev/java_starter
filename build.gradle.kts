@@ -25,7 +25,7 @@ dependencies {
 	// Spring
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
-	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
+	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.8.3")
 	implementation("org.springframework.boot:spring-boot-starter-web")
 
 	// Other
